@@ -79,7 +79,6 @@ public class ForgeCtrl : MonoBehaviour
             _forgeState = ForgeState.MAX;
             firePower = 10;
         }
-        Debug.Log(_forgeState);
     }
 
     private void Firing(ForgeState state)

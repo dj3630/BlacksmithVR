@@ -44,15 +44,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _makingProcess: 0
+  isPlaying: 0
   recipeProcessObject:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  movingProcessObject:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   bellowingProcessObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  heatingProcessObject:
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   hammeringProcessObjects:
@@ -65,4 +66,21 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  isPlaying: 0
+  recipeBoxCheck: 0
+  movingBoxCheck: 0
+  bellowingBoxCheck: 0
+  tempCheck: 0
+  magneticCheck: 0
+  hammeringCompleteCheck: 0
+  coolingCheck: 0
+  handlingBoxCheck: 0
+  instructions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

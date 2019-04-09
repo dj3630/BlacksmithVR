@@ -43,6 +43,14 @@ public class MagneticSetPos : MonoBehaviour
 
     private IEnumerator SetPos(Collider other)
     {
+        //모루 상단에 자석효과 받을 때만 Rigidbody 추가
+        var ingotHitSide = other.GetComponentsInChildren<Transform>()[1];
+        var ingotRigidbody = ingotHitSide.gameObject.AddComponent<Rigidbody>();
+        ingotRigidbody.useGravity = false;
+        ingotRigidbody.isKinematic = true;
+        ingotRigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+
+
         ingotRigidbody = other.GetComponent<Rigidbody>();
         ingotRigidbody.isKinematic = true;
 

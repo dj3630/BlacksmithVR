@@ -28,14 +28,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2524301633245901560}
-  m_LocalRotation: {x: -0.41650885, y: 0.49141625, z: -0.50129026, w: 0.5777011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2524301634329319330}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -180.656, y: 260.208, z: -261.346}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2524301633245901542
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -110,7 +110,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &2524301633245901562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,7 +159,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2524301634329319330}
   - component: {fileID: 2524301634329319341}
-  - component: {fileID: 1640594454}
   m_Layer: 0
   m_Name: HammerHitSide
   m_TagString: HAMMERHITSIDE
@@ -175,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2524301634329319331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.1103, y: 0.4971, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 880014488831268645}
@@ -190,24 +189,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2524301634329319331}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.019850807, y: 0.08799998, z: 0.101}
-  m_Center: {x: 0.1025741, y: 0.49599934, z: -0.0000038040575}
---- !u!114 &1640594454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2524301634329319331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17629b28085a9774c8d333fc21713f0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effect: {fileID: 0}
+  m_Size: {x: 0.02, y: 0.07, z: 0.08}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &849201873574820032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -275,14 +261,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 373619769596442149, guid: 13091571bdacc384393ae50214b55aee,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 466672891204968699, guid: 13091571bdacc384393ae50214b55aee,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 373619769596442149, guid: 13091571bdacc384393ae50214b55aee,
+        type: 3}
+      propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 373126065001689413, guid: 13091571bdacc384393ae50214b55aee,

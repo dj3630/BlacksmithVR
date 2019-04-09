@@ -47,6 +47,7 @@ public class ModelHitCtrl_FINAL : MonoBehaviour
     {
         if (!isPlayed)
         {
+            Debug.Log("Audio On");
             _audio.PlayOneShot(_audioClip[1], volume);
             isPlayed = true;
         }

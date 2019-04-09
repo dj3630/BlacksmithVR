@@ -28,6 +28,7 @@ TagManager:
   - Coll_2
   - Coll_3
   - GRIP
+  - SHARPNINGOBJ
   layers:
   - Default
   - TransparentFX

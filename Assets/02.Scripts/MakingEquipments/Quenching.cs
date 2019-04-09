@@ -34,23 +34,30 @@ public class Quenching : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (!(other.tag == "Coll_1" || other.tag == "Coll_2" || other.tag == "Coll_3")) return;
-
         HeatingCtrl script = other.GetComponentInParent<HeatingCtrl>();
 
-        if (other.tag == "Coll_1")
-            script.colliderCheck_1 = false;
-        else if (other.tag == "Coll_2")
-            script.colliderCheck_2 = false;
-        else if (other.tag == "Coll_3")
-            script.colliderCheck_3 = false;
-
-        if (!script.colliderCheck_1 && !script.colliderCheck_2 && !script.colliderCheck_3)
+        if ((other.tag == "Coll_1" || other.tag == "Coll_2" || other.tag == "Coll_3") && script.isQuenchingComplete)
         {
-            script.GetComponent<ModelHitCtrl_FINAL>().isPlayed = false;
-            script.GetComponent<ModelHitCtrl_FINAL>().SteamSoundOff();
-            script.isQuenched = false;
-            effect.Stop();
+            Debug.Log(script.isQuenchingComplete);
+
+            if (other.tag == "Coll_1")
+                script.colliderCheck_1 = false;
+            else if (other.tag == "Coll_2")
+                script.colliderCheck_2 = false;
+            else if (other.tag == "Coll_3")
+                script.colliderCheck_3 = false;
+
+            Debug.Log(script.colliderCheck_1);
+            Debug.Log(script.colliderCheck_2);
+            Debug.Log(script.colliderCheck_3);
+            if (!script.colliderCheck_1 && !script.colliderCheck_2 && !script.colliderCheck_3)
+            {
+                Debug.Log("Trigger Out");
+                script.GetComponent<ModelHitCtrl_FINAL>().isPlayed = false;
+                script.GetComponent<ModelHitCtrl_FINAL>().SteamSoundOff();
+                script.isQuenched = false;
+                effect.Stop();
+            }
         }
     }
 }

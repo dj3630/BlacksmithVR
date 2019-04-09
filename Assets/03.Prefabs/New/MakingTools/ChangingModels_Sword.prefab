@@ -230,7 +230,7 @@ MonoBehaviour:
   alignRotationOffset: {x: 0, y: 0, z: 0}
   m_followingDuration: 0.04
   m_overrideMaxAngularVelocity: 1
-  m_unblockableGrab: 1
+  m_unblockableGrab: 0
   m_grabButton: 0
   m_allowMultipleGrabbers: 1
   m_afterGrabbed:
@@ -296,8 +296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d45e5e7d8594c4c4c89b28c95ad1eef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioClip: {fileID: 8300000, guid: 2f239ba70cc828d4ca45156cfc5500f5, type: 3}
-  modelHitCount: 0
   meshes:
   - {fileID: 4300000, guid: 037f78e781a7ab749bd034f4a62745ab, type: 2}
   - {fileID: 4300000, guid: 88032719789ed7e459079f0344122bd1, type: 2}
@@ -308,9 +306,11 @@ MonoBehaviour:
   - {fileID: 4300000, guid: 0274a2b37bc30214da63ecf1466ca67c, type: 2}
   - {fileID: 4300000, guid: 00b67c51aa42f4914bc55cb910ca2df6, type: 3}
   - {fileID: 4300000, guid: f6b9e4a4d69444f7eae8f2efe9d795a4, type: 3}
+  modelHitCount: 0
   finalModelPrefab: {fileID: 5296915562289263359, guid: 59d819267f26eb946be57f7365e4c08f,
     type: 3}
   effect: {fileID: 570957807066055627, guid: 13091571bdacc384393ae50214b55aee, type: 3}
+  _audioClip: {fileID: 8300000, guid: 2f239ba70cc828d4ca45156cfc5500f5, type: 3}
 --- !u!114 &7898500558264906356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,5 +330,5 @@ MonoBehaviour:
   colliderCheck_1: 0
   colliderCheck_2: 0
   colliderCheck_3: 0
-  isMinTemp: 1
   isQuenchingComplete: 0
+  isMinTemp: 1

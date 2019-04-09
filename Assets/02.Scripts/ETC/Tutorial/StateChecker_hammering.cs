@@ -15,8 +15,7 @@ public class StateChecker_hammering : MonoBehaviour
     {
         if (other.tag == "INGOT" && script.isSetCompleted)
         {
-            Debug.Log("State transition to HammeringComplete");
-            GameManager_Tutorial.Instance.magneticCheck = true;
+            //GameManager_Tutorial.Instance.magneticCheck = true;
         }
     }
 }
