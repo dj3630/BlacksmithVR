@@ -29,6 +29,8 @@ TagManager:
   - Coll_3
   - GRIP
   - SHARPNINGOBJ
+  - BUTTON
+  - WHEEL
   layers:
   - Default
   - TransparentFX

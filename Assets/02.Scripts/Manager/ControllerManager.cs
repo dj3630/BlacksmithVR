@@ -51,8 +51,28 @@ public class ControllerManager : MonoBehaviour
     public void GripPressUp()
     {
         Grip_Press = false;
+        Grip_PressDown = false;
+
         Grip_PressUp = true;
         Debug.Log("GripPressUP");
+    }
+
+    public void GripPressDown()
+    {
+        Grip_PressUp = false;
+
+        Grip_PressDown = true;
+        Debug.Log("GripPressDown");
+        
+    }
+
+    public void GripClick()
+    {
+        Grip_Click = true;
+
+        
+        Debug.Log("Grip_Click");
+
     }
 
     //트리거
